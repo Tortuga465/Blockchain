@@ -3,9 +3,9 @@ import os.path
 import hashlib
 
 
-def crate_block_chain():
-    files_amount=int(input("enter number of files\n"))                              
-    rel_path_dir=os.getcwd()                                                        # Относительный путь. На Линукс не будет работать, т.к. формат пути другой
+def crate_block_chain(files_amount, rel_path_dir):
+                             
+# Относительный путь. На Линукс не будет работать, т.к. формат пути другой
       # Путь до файла
     
     for i in range(1, files_amount+1):
@@ -20,7 +20,3 @@ def crate_block_chain():
                 f.write("\n")
         f.write(lorem.sentence())
         f.close
-        
-
-
-
