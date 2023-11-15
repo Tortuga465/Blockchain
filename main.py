@@ -2,12 +2,12 @@ import create_files
 import check_hash
 import os
 
-# INITITALISE DIR
-#files_amount=int(input("enter number of files\n"))
+# Инициализация
+files_amount=int(input("Введите количество файлов\n"))
 rel_path_dir=os.getcwd()
+# Инициализация
 
-# INITIALISE DIR
-
-
-#create_files.crate_block_chain(files_amount, rel_path_dir)
-check_hash.check_hashes(rel_path_dir)
+#Функция создает блокчейн
+create_files.crate_block_chain(files_amount, rel_path_dir)
+#Функция проверяет блокчейн
+#check_hash.check_hashes(rel_path_dir)
