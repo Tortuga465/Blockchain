@@ -1,8 +1,10 @@
 # Blockchain
 TO DO
+***
 # Зависимости
 lorem
 natsort
+***
 # Запуск
 # Создание блокчейна
 
@@ -27,3 +29,4 @@ natsort
     #create_files.crate_block_chain(files_amount, rel_path_dir)
     #Функция проверяет блокчейн
     check_hash.check_hashes(rel_path_dir)
+***
