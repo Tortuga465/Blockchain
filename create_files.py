@@ -3,7 +3,7 @@ import os.path
 import hashlib
 
 
-def crate_block_chain(files_amount, rel_path_dir):
+def create_block_chain(files_amount, rel_path_dir):
                              
 # Относительный путь. На Линукс не будет работать, т.к. формат пути другой
       # Путь до файла
