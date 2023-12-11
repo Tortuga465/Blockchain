@@ -18,5 +18,15 @@ def crate_block_chain(files_amount, rel_path_dir):
                 md5_hash = hashlib.md5(file_contents).hexdigest()
                 f.write(md5_hash)
                 f.write("\n")
-        f.write(lorem.sentence())
+        f.close
+        f=open(rel_path_file,"rb")
+        file_contents_f = f.read()
+        print(file_contents_f)
+        while(hashlib.md5(file_contents_f).hexdigest()[:2]!="00"):
+            f.close
+            f=open(rel_path_file,"a")
+            f.write(lorem.sentence())
+            f.close
+            f=open(rel_path_file,"rb")
+            file_contents_f = f.read()
         f.close
