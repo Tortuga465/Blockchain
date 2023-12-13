@@ -26,7 +26,7 @@ def create_file(files_amount: int, rel_path_dir: str): #Функция прин�
 
 def create_block_chain(files_amount: int, rel_path_dir: str):              #name_list: list    
     
-    for i in range(1, files_amount+1): #Выполняется цикл от 1 до files_amount+1.
+    for i in range(1, len(files_amount)+1): #Выполняется цикл от 1 до files_amount+1.
         rel_path_file=os.path.join(rel_path_dir,"text_files\chain{}".format(i)+".txt") #Создается относительный путь к файлу, используя функцию os.path.join и значение i.
         f=open(rel_path_file,"w")
         
