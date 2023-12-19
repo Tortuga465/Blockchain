@@ -2,6 +2,7 @@
 TO DO
 ***
 # Зависимости
+python3
 lorem
 natsort
 ***
