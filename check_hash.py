@@ -23,5 +23,5 @@ def check_hashes(rel_path_dir):
         if(hashes_read[id]==hashes_calc[id]):
             print("Хэш блока {} валидно записан в блоке {}".format(id+1, id+2))
         else:
-            print("Ошибка хэш блока {} в записи блока {}".format(id+1, id+2))
+            print("Ошибка хэш блока {} в записи блока {}".format(id+2, id+3))
             break
